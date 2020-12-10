@@ -151,7 +151,7 @@ const search = async () => {
     }
     else{
         for(let i=0; i<pnames_arr.length; i++)
-        if(pnames_arr[i].indexOf(tosearch)>-1){
+        if(pnames_arr[i].indexOf(tosearch.toLocaleLowerCase())>-1){
             getPserch(i+1)
         }
     }
@@ -190,8 +190,6 @@ const getPserch = async id => {
 function pokemonS(pokemon) {
     const PokEl = document.createElement('div');
     PokEl.classList.add('pokemon');
-    // PokEl.setAttribute("onclick", `getClick(${pokemon.id})`)
-    // PokEl.setAttribute("id", `Element${pokemon.id}`)
     const p_type = pokemon.types.map(el => el.type.name);
     const p_stat = pokemon.stats.map(el => el.base_stat);
     const hp = p_stat[0];
