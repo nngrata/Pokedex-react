@@ -68,26 +68,26 @@ padding-top: 10px;
     justify-content: center;
 }
 .back, .front{
-    backface-visibility: hidden;
-    justify-content:center;
-    align-items:center;
-    transition:1s;
+    -webkit-backface-visibility: hidden;
+    -webkit-justify-content:center;
+    -webkit-align-items:center;
+    -webkit-transition:1s;
 }
 .back{
-    align-items: center;
-    justify-content: center;
+    -webkit-align-items:center;
+    -webkit-justify-content:center;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
 }
 .pokemon:hover .front{
-    transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
 }
 .pokemon:hover .back{
-    transform:rotateY(360deg);
+    -webkit-transform:rotateY(360deg);
 }
 
 #nameback{
