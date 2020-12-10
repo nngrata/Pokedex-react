@@ -113,7 +113,6 @@ padding-top: 10px;
     color: black;
 }
 .elements_count{
-    display: flex;
     color: #101010;
     background-color: gold;
     border: 4px solid #101010;
@@ -122,8 +121,8 @@ padding-top: 10px;
     margin: 10px;
 }
 .filter{
-    display: flex;
-background-color: gold;
+    display: block;
+    background-color: gold;
     margin-top: -5px;
     border-radius: 40px;
 }
