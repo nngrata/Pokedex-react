@@ -162,11 +162,38 @@ background-color: gold;
     color: #101010;
 }
 
-@media only handheld and(max-device-width: 480px) {
+@media only screen and(max-width:  576px) {
 .wrap{
-    width: 430px;
+    width: 550px;
 }
 .p_cont{
     width: 100%;
 }
+}
+
+@media only screen and(min-width:  576px) {
+    .wrap{
+        width: 580px;
+    }
+    .p_cont{
+        width: 100%;
+    }
+}
+
+@media only screen and(min-width:  768px) {
+    .wrap{
+        width: 768px;
+    }
+    .p_cont{
+        width: 100%;
+    }
+}
+
+@media only screen and(min-width:  992px) {
+    .wrap{
+        width: 992px;
+    }
+    .p_cont{
+        width: 100%;
+    }
 }
