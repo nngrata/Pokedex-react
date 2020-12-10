@@ -24,8 +24,8 @@ const colors = {
 const type_arr = Object.keys(colors);
 const ptypes_arr=[];
 const fetchP = async () => {
-    document.getElementById('p_cont').innerHTML = '';
-    for(let i = 1; i <= p_num; i++){
+    p_cont.innerHTML ='';
+        for(let i = 1; i <= p_num; i++){
             await getP(i);
         }
     document.getElementById('next').hidden = false;
@@ -138,7 +138,6 @@ function fillarray(pokemoni) {
 fetchall();
 const search = async () => {
     document.getElementById("sfieldcont").innerHTML = '';
-    console.log(pnames_arr);
     var tosearch = document.querySelector("input").value;
     tosearch_val = parseInt(tosearch);
     const p = isNaN(tosearch);
@@ -149,23 +148,20 @@ const search = async () => {
             alert("Ого, столько покемонов у нас нет(")
         }
     }
-    else{
-        for(let i=0; i<pnames_arr.length; i++)
-        if(pnames_arr[i].indexOf(tosearch.toLocaleLowerCase())>-1){
-            getPserch(i+1)
-        }
+    else {
+        for (let i = 0; i < pnames_arr.length; i++)
+            if (pnames_arr[i].indexOf(tosearch.toLocaleLowerCase()) > -1) {
+                getPserch(i + 1)
+            }
     }
-    if (tosearch === "") {
-        sfieldcont.hidden = true;
-    }
-    ret(tosearch)
+
+
 };
 function filterbytype(type) {
     sfieldcont.innerHTML = '';
     p_cont.innerHTML ='';
     document.getElementById('next').hidden = true;
     document.getElementById('prev').hidden = true;
-
     typese = document.getElementsByClassName("types");
     typese.checked = false;
     for(let i=0; i<ptypes_arr.length; i++)
@@ -175,9 +171,10 @@ function filterbytype(type) {
 }
 function ret() {
     var tosearch = document.querySelector("input").value;
-    if(tosearch === ""){
-    sfieldcont.innerHTML='';
-    }
+    if (tosearch === "") {
+        sfieldcont.innerHTML = '';
+        p_cont.innerHTML = '';
+        countel(10)    }
 
 }
 const getPserch = async id => {
