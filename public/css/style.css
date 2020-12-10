@@ -162,12 +162,5 @@ background-color: gold;
     color: #101010;
 }
 
-@media only screen and(max-width: 480px) {
-.wrap{
-    width: 550px;
-}
-.p_cont{
-    width: 100%;
-}
-}
+
 

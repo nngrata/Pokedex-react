@@ -1,5 +1,5 @@
-@media only screen and(min-width:  480px) {
-    .wrap{
-        width: 100%;
+@media only screen and(max-width:  480px) {
+    body{
+        width: 400px;
     }
 }
