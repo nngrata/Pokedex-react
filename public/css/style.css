@@ -162,7 +162,7 @@ background-color: gold;
     color: #101010;
 }
 
-@media only handheld and(min-device-width: 480px) {
+@media only handheld and(max-device-width: 480px) {
 .wrap{
     width: 430px;
 }
