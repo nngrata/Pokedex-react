@@ -13,8 +13,8 @@
 <div id = 'heading'>
 <h1>Pocedex</h1></div>
 <div class="filter">
-    <input type="text" placeholder="Pokemon Name or Number" id="search" oninput="ret()"/>
-    <button id="bsearch" onclick="search()">Искать</button>
+    <input type="text" placeholder="Pokemon Name or Number" id="search" oninput="ret()" onKeyDown="if(event.keyCode==13) search()"/>
+    <button id="bsearch" onclick="search()">Search</button>
     <div class="elements_count">
         <label ><input type="radio" checked name="10" value="10" onclick="countel(10)">10 elements</label>
         <label ><input type="radio"  name="10" value="15" onclick="countel(15)">15 elements</label>

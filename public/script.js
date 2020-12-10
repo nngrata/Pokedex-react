@@ -155,7 +155,6 @@ const search = async () => {
             getPserch(i+1)
         }
     }
-    console.log(tosearch);
     if (tosearch === "") {
         sfieldcont.hidden = true;
     }
