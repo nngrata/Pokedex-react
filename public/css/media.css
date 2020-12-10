@@ -1,0 +1,6 @@
+@media handheld {
+    body{
+        width: 440px;
+        background-color: orangered;
+    }
+}

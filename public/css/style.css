@@ -1,4 +1,5 @@
 body{
+    min-width: 440px;
     background: #101010;
     text-align: center;
     display: flex;
