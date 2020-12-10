@@ -1,5 +1,5 @@
 @media only screen and(min-width:  480px) {
-    .wrap{
+    *{
         width: 450px;
     }
 }
