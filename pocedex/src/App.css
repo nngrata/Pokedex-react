@@ -1,0 +1,28 @@
+.App{
+  padding-top: 8rem;
+}
+.icontainer img{
+  margin: 5px;
+  max-width: 80%;
+}
+.pokemon{
+  max-width: 210px;
+  flex: 0;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #101010;
+  border: 5px solid gold;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  perspective: 1000px;
+  color: whitesmoke;
+}
+.icontainer{
+  background-color: #292b2c;
+  width: 140px;
+  height: 140px;
+  border-radius: 48%;
+}

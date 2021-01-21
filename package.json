@@ -2,7 +2,7 @@
   "name": "Pocedex",
   "version": "1.0.0",
   "description": "",
-  "main": "public/script.js",
+  "main": "pocedex/src/Components/script.js",
   "scripts": {
     "start": "node index.js"
   },
@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1"
   }
 }
